@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b12"><title>ToonFlix — Anime</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark">✦</span> Toon<span>Flix</span></a>
+  <nav><a class="active" href="index.html">Home</a><a href="#trending">Trending</a><a href="#latest">Latest Episodes</a><a href="admin.html">Admin</a></nav>
+  <div class="header-search"><span>⌕</span><input id="searchInput" placeholder="Search anime..." autocomplete="off"></div>
+  <button class="mobile-menu" id="menuBtn" aria-label="Menu">☰</button>
+</header>
+<main class="page-shell">
+  <section class="hero" id="hero">
+    <div class="hero-backdrop"></div><div class="hero-content">
+      <div class="eyebrow"><span class="live-dot"></span> YOUR ANIME UNIVERSE</div>
+      <h1>Stories that<br><em>stay with you.</em></h1>
+      <p>Discover your next obsession. Explore trending series, follow new episodes, and build your anime watchlist.</p>
+      <div class="hero-actions"><a class="btn primary" href="#trending">Explore Anime <span>↗</span></a><a class="btn glass" href="#latest">Latest episodes</a></div>
+      <div class="hero-meta"><span>✦ Curated catalogue</span><span>◉ Mobile friendly</span><span>▣ Track your progress</span></div>
+    </div>
+    <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-glyph">ア</div><div class="hero-sticker">NEW<br><b>SEASON</b></div></div>
+  </section>
+  <section class="section" id="trending"><div class="section-heading"><div><div class="eyebrow">THE COMMUNITY'S PICKS</div><h2>Trending <em>now</em></h2></div><span class="section-note">Discover something great <b>↗</b></span></div><div id="trendingGrid" class="anime-grid"></div></section>
+  <section class="section" id="latest"><div class="section-heading"><div><div class="eyebrow">FRESH FROM THE SCREEN</div><h2>Latest <em>episodes</em></h2></div><span class="section-note">Updated by admins</span></div><div id="latestGrid" class="episode-list"></div></section>
+  <section class="newsletter"><div><div class="eyebrow">STAY IN THE LOOP</div><h2>Your next favourite is<br><em>one click away.</em></h2></div><a class="btn primary" href="#trending">Browse catalogue ↗</a></section>
+  <footer><a class="brand" href="index.html"><span class="brand-mark">✦</span> Toon<span>Flix</span></a><p>Anime discovery, made for fans.</p><span>© <span id="year"></span> ToonFlix • Demo starter</span></footer>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="assets/firebase-config.js"></script><script src="assets/app.js"></script>
+</body></html>

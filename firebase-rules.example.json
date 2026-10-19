@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "catalogue": {
+      ".read": true,
+      "anime": {
+        "$animeId": {
+          ".write": "auth != null"
+        }
+      },
+      "episodes": {
+        "$episodeId": {
+          ".write": "auth != null"
+        }
+      },
+      "settings": {
+        ".write": "auth != null"
+      }
+    }
+  }
+}
